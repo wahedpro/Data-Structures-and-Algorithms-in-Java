@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Scanner;
 public class Arrays{
     public static void main(String[] ages){
@@ -5,11 +7,11 @@ public class Arrays{
         int[] number=new int[10];
         
         //Scanner Object create
-        Scanner input=new Scanner(System.in);
+        Scanner iu=new Scanner(System.in);
 
         //input value in array 
         for(int i=0; i<number.length; i++){
-            number[i]=input.nextInt();
+            number[i]=iu.nextInt();
         }
 
         //Array print
