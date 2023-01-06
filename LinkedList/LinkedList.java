@@ -59,6 +59,22 @@ public class LinkedList {
             this.size++;
         }
     }
+    //add node in the index-> addAt
+    public void addAt(int index, int item){
+        if(index < 0 || index > size){
+            System.out.println("Invalid Index");
+        }
+        
+        if(index ==0){
+            addFast(item);
+        }else if(index==this.size){
+            addLast(item);
+        }else{
+            Node n=new Node();
+            n.data=item;
+            n.next=null;
+        }
+    }
 
 
 
